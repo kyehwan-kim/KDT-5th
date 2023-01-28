@@ -1,4 +1,10 @@
-P{
-  color: red;
-  background-color: bisque;
+@import url(./style-1.css);
+
+P {
+  color: white;
+  background-color: red;
+}
+h3 {
+  background-color: black;
+  color: white;
 }
