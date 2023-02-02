@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        /* 아래 효과는 많이 사용하지 않는다. duration 값에서 조절해주는것이 좋다
+        transition-property: width, height; */
+      }
+
+      div:hover {
+        width: 400px;
+        height: 100px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
