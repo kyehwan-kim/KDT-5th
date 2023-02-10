@@ -22,7 +22,7 @@ if ((!isAdult && !"vip" && isDrunken) || money) {
   console.log("돌아가");
 }
 
-//이건 강사님 답
+//이건 강사님
 const 김계환 = {
   성인인가: true,
   VIP: false,
