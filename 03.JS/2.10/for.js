@@ -6,9 +6,9 @@ for (let index = 0; index < 10; index += 1) {
 }
 
 //2중 FOR 문
-for (let i = 0; i < 3; i += 1) {
+for (let i = 0; i < 5; i += 1) {
   console.log(`상위 for 문 입니다. ${i + 1} 번째 작동 중`);
-  for (let j = 0; j < 5; j += 1) {
+  for (let j = 0; j < 9; j += 1) {
     console.log(`   하위 for 문 입니다. i는 ${i} j는 ${j} 입니다.`);
   }
 }
