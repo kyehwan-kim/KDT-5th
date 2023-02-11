@@ -1,18 +1,38 @@
+// let day = new Date().getDay();
+
+// if (day === 0) {
+//   alert("일요일");
+// } else if (day === 1) {
+//   alert("월요일");
+// } else if (day === 2) {
+//   alert("화요일");
+// } else if (day === 3) {
+//   alert("수요일");
+// } else if (day === 4) {
+//   alert("목요일");
+// } else if (day === 5) {
+//   alert("금요일");
+// } else if (day === 6) {
+//   alert("토요일");
+// }
+// console.log(day);
+
 let day = new Date().getDay();
 
 if (day === 0) {
-  alert("일요일");
+  alert("일요일 입니다.");
 } else if (day === 1) {
-  alert("월요일");
+  alert("월요일 입니다.");
 } else if (day === 2) {
-  alert("화요일");
+  alert("화요일 입니다.");
 } else if (day === 3) {
-  alert("수요일");
+  alert("수요일 입니다.");
 } else if (day === 4) {
-  alert("목요일");
+  alert("목요일 입니다.");
 } else if (day === 5) {
-  alert("금요일");
+  alert("금요일 입니다.");
 } else if (day === 6) {
-  alert("토요일");
+  alert("토요일 입니다.");
 }
+
 console.log(day);
