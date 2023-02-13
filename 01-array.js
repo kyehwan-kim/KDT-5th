@@ -31,5 +31,6 @@ kdt.shift();
 console.log(kdt);
 
 for (let i = 0; i < kdt.length; i++) {
-  console.log(kdt[i]);
+  // console.log(kdt[i]);
+  console.log(`KDT 1번째`);
 }
