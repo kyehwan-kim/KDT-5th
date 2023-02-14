@@ -9,6 +9,6 @@ listEl3.classList.add("orange");
 console.log(listEl3);
 
 if (listEl1.classList.contains("orange")) {
-  listEl1.classList.romove("ornage");
+  listEl1.classList.remove("orange");
 }
 console.log(listEl1);
