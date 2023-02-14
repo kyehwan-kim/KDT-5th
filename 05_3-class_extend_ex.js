@@ -30,6 +30,7 @@ class Triangle extends Shape {
 //Circle
 class Cirlce extends Shape {
   constructor(radius) {
+    super();
     this.radius = radius;
   }
 
@@ -37,3 +38,9 @@ class Cirlce extends Shape {
     return this.radius ** 2 * 3.14;
   }
 }
+
+const rec = new Rectangle(10, 10);
+const tri = new Triangle(10, 10);
+const cir = new Cirlce(3);
+
+console.log();
