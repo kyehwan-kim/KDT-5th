@@ -1,0 +1,48 @@
+@import "reset";
+@import "mixin";
+
+$body-bg: #eee;
+$wrap-boder: #ddd;
+$wrap__item-bg: #fff;
+$wrap__item-h2: #333;
+$wrap__item-p: #777;
+$btn-bg: orange;
+$btn-font: white;
+$wrap__item-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+// MAIN
+
+body {
+  background-color: $body-bg;
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  padding: 100px;
+  justify-content: center;
+  border: 2px solid $wrap-boder;
+
+  .item {
+    width: 300px;
+    padding: 30px;
+    background-color: $wrap__item-bg;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: $wrap__item-shadow;
+
+    h2 {
+      font: bold 30px/1 "arial";
+      margin-bottom: 20px;
+      color: $wrap__item-h2;
+    }
+
+    p {
+      font: normal 16px/1.5 "arial";
+      color: $wrap__item-p;
+    }
+    a {
+      @include button($width: 100%, $bg-color: $btn-bg, $font-color: $btn-font);
+    }
+  }
+}
