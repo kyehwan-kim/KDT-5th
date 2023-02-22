@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.localStorage.setItem("name", "김계환");
+      console.log(window.localStorage.getItem("name"));
+
+      window.localStorage.setItem("number", "1");
+      const number = window.localStorage.getItem("number");
+      console.log(number);
+      console.log(typeof number);
+
+      const hwan = {
+        name: "김계환",
+        isOld: true,
+        hobby: ["운동", "영화", "맛집"],
+      };
+
+      const jsonHwan = JSON.stringify(hwan);
+      window.localStorage.setItem("hwan", jsonHwan);
+
+      const jsonHwanFromLocal = window.localStorage.getItem("hwan");
+      const objHwan = JSON.parse(jsonHwanFromLocal);
+      console.log(objHwan);
+
+      // const jsonHwan = JSON.stringify(hwan);
+      // console.log(jsonHwan);
+
+      // const objHWan = JSON.parse(jsonHwan);
+      // console.log(objHWan);
+
+      window.localStorage.setItem("pororo", "뽀로로입니다.");
+      console.log(window.localStorage.getItem("pororo"));
+      window.localStorage.removeItem("pororo");
+      console.log(window.localStorage.getItem("pororo"));
+
+      window.localStorage.clear();
+      console.log(window.localStorage);
+
+      window.localStorage.setItem("hwan", "나야나");
+      window.localStorage.setItem("proro", "뽀로로로");
+
+      console.log(window.localStorage.length);
+      console.log(window.localStorage.key(0));
+      console.log(window.localStorage.key(1));
+      console.log(window.localStorage.key(2));
+
+      window.localStorage.clear();
+
+      window.localStorage.setItem("hwan", "김계환");
+      window.sessionStorage.setItem("pororo", "뽀로로");
+    </script>
+  </head>
+  <body></body>
+</html>

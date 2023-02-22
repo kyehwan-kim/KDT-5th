@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.localStorage.setItem("dreamworks", "드림웍스");
+      window.localStorage.setItem("orasy", "오르세");
+      window.localStorage.setItem("louvre", "루브르");
+      window.localStorage.setItem("timburton", "팀버튼");
+      window.localStorage.setItem("pixar", "픽사");
+
+      for (let i = 0; i < window.localStorage.length; i++) {
+        const key = window.localStorage.key(i);
+        const value = window.localStorage.getItem(key);
+        console.log(`locaStorage의 ${key} 값은 ${value}입니다.`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
